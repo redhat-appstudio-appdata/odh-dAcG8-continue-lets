@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: data-science-pipelines-artifact-manager
     spec:
       containers:
-      - image: go-image:latest
+      - image: quay.io/redhat-user-workloads/open-data-hub-tenant/odh/data-science-pipelines-artifact-manager@sha256:2e17b039510d1152f42e9f0df742bfcd503a7c194993d7213e45ee20721e8c6b
         name: my-go
         ports:
         - containerPort: 8081
