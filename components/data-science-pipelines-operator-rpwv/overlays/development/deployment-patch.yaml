@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: data-science-pipelines-operator-rpwv
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/open-data-hub-tenant/odh/data-science-pipelines-operator-rpwv@sha256:ea5ed5272f0135d6134f76eafb86f6b4310e220094f7b73fe13e29b9fb1bfda6
+        name: container-image
+        resources: {}
+status: {}
