@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: data-science-pipelines-cache-server
     spec:
       containers:
-      - image: go-image:latest
+      - image: quay.io/redhat-user-workloads/open-data-hub-tenant/odh/data-science-pipelines-cache-server@sha256:f41befb7fe4d95d6f00da9094564d72581b16c4b44282fdfa8e5eecef8dac780
         name: my-go
         ports:
         - containerPort: 8081
