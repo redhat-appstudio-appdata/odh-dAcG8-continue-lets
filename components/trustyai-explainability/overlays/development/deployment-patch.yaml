@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: trustyai-explainability
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/open-data-hub-tenant/odh/trustyai-explainability@sha256:c5468fc59d4448258c1e27dbd8982abc18b47f0b0bd88200c01148f25058c4f6
+        name: container-image
+        resources: {}
+status: {}
