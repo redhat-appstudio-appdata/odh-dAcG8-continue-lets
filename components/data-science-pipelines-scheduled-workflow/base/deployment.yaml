@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: data-science-pipelines-scheduled-workflow
     spec:
       containers:
-      - image: go-image:latest
+      - image: quay.io/redhat-user-workloads/open-data-hub-tenant/odh/data-science-pipelines-scheduled-workflow@sha256:db39802599b8818e627818e9a969d89e6a12d1d66b23c791ce30c00cff3cdf5c
         name: my-go
         ports:
         - containerPort: 8081
