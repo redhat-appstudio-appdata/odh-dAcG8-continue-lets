@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: rest-proxy
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/open-data-hub-tenant/odh/rest-proxy@sha256:eeed989ba02c5300c97fd8913ab788658f978415dfb6c0443a740a4e089f8d68
         imagePullPolicy: Always
         name: container-image
         ports:
