@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: codeflare-operator
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/open-data-hub-tenant/odh/codeflare-operator@sha256:4f8e20ce6905a23b094453a2d0450bba1c766630fa8bf7bb5d72a76c95adabc6
+        name: container-image
+        resources: {}
+status: {}
