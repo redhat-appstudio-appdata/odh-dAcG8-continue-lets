@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: data-science-pipelines-persistence-agent
     spec:
       containers:
-      - image: go-image:latest
+      - image: quay.io/redhat-user-workloads/open-data-hub-tenant/odh/data-science-pipelines-persistence-agent@sha256:4255e2104ca7619576f82f44c318e293fdfbf0896886d6fb8782066fe3c64f6a
         name: my-go
         ports:
         - containerPort: 8081
