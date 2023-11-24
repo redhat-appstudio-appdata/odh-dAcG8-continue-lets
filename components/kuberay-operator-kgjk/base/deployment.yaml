@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: kuberay-operator-kgjk
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/open-data-hub-tenant/odh/kuberay-operator-kgjk@sha256:c5630220b7dbf2371e7dc63852e42c3534e5fb85108a5838ba3c9a7e48746513
         imagePullPolicy: Always
         name: container-image
         ports:
