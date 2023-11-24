@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: codeflare-operator
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/open-data-hub-tenant/odh/codeflare-operator@sha256:4f8e20ce6905a23b094453a2d0450bba1c766630fa8bf7bb5d72a76c95adabc6
         imagePullPolicy: Always
         name: container-image
         ports:
