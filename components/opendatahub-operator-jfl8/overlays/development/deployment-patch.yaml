@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: opendatahub-operator-jfl8
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/open-data-hub-tenant/odh/opendatahub-operator-jfl8@sha256:12ca68dd4a279c97aa7df5a3bd9157b6757645067a51abe3d4b2a03765cb416c
+        name: my-go
+        resources: {}
+status: {}

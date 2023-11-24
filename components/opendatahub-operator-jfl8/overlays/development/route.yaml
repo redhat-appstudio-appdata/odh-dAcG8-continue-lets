@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: opendatahub-operator-jfl8
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: opendatahub-operator-jfl8
+    app.kubernetes.io/part-of: odh
+  name: opendatahub-operator-jfl8lu3q
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: opendatahub-operator-jfl8
+    weight: null
+status: {}
