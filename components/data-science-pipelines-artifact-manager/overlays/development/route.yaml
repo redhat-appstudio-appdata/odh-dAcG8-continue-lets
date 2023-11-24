@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: data-science-pipelines-artifact-manager
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: data-science-pipelines-artifact-manager
+    app.kubernetes.io/part-of: odh
+  name: data-science-pipelines-ar4cin
+spec:
+  path: /
+  port:
+    targetPort: 8888
+  to:
+    kind: Service
+    name: data-science-pipelines-artifact-manager
+    weight: null
+status: {}
