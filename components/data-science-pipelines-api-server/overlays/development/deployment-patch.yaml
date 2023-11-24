@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: data-science-pipelines-api-server
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/open-data-hub-tenant/odh/data-science-pipelines-api-server@sha256:dc508027885336e95bb0d3ca39596ebf2173d1d1dfdeb64638e3d71230737ac8
+        name: my-go
+        resources: {}
+status: {}
