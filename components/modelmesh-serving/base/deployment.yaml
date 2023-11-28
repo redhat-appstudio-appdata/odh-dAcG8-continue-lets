@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: modelmesh-serving
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/open-data-hub-tenant/odh/modelmesh-serving@sha256:8fe4a884be1ca4f1cf9a4ea3572b2c507ea743ce002287bac44c1000a847673e
         imagePullPolicy: Always
         name: container-image
         ports:
