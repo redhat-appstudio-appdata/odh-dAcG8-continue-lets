@@ -1,0 +1,22 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: modelmesh-serving
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: modelmesh-serving
+    app.kubernetes.io/part-of: odh
+  name: modelmesh-servingbmtw
+spec:
+  port:
+    targetPort: 9999
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: modelmesh-serving
+    weight: 100
+status: {}

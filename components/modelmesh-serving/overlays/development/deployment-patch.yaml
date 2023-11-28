@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: modelmesh-serving
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/open-data-hub-tenant/odh/modelmesh-serving@sha256:8fe4a884be1ca4f1cf9a4ea3572b2c507ea743ce002287bac44c1000a847673e
+        name: container-image
+        resources: {}
+status: {}
