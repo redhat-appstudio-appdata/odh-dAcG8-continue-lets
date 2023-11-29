@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: modelmesh-runtime-adapter
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/open-data-hub-tenant/odh/modelmesh-runtime-adapter@sha256:4203991123e7b489ca135382a52fca96372afb25495ef4631be411333ef80a43
         imagePullPolicy: Always
         name: container-image
         ports:
