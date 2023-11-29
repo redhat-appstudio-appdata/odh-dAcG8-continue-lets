@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: data-science-pipelines-operator-gjdj
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/open-data-hub-tenant/odh/data-science-pipelines-operator-gjdj@sha256:57980b29fefbd5e029995d4f520aecbe5c1accb9b354e56aa6c47e585386193c
         imagePullPolicy: Always
         name: container-image
         ports:
