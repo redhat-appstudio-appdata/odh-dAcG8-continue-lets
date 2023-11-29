@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: kuberay-operator
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/open-data-hub-tenant/odh/kuberay-operator@sha256:72ace48082598cc0bff30b02f8e12e8c2ae3e1a19810f5e95287eeeb54a2b722
+        name: container-image
+        resources: {}
+status: {}
