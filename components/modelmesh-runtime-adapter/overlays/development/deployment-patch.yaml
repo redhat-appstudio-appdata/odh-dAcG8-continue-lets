@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: modelmesh-runtime-adapter
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/open-data-hub-tenant/odh/modelmesh-runtime-adapter@sha256:4203991123e7b489ca135382a52fca96372afb25495ef4631be411333ef80a43
+        name: container-image
+        resources: {}
+status: {}
