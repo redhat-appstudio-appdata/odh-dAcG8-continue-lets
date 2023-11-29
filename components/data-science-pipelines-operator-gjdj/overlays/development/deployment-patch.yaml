@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: data-science-pipelines-operator-gjdj
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/open-data-hub-tenant/odh/data-science-pipelines-operator-gjdj@sha256:57980b29fefbd5e029995d4f520aecbe5c1accb9b354e56aa6c47e585386193c
+        name: container-image
+        resources: {}
+status: {}
