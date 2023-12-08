@@ -4,6 +4,7 @@ metadata:
   creationTimestamp: null
   name: data-science-pipelines-persistence-agent
 spec:
+  replicas: 1
   selector: {}
   strategy: {}
   template:
